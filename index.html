@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalepGetir - İhracat Lead Listeleri</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <!-- Top banner -->
+        <div class="banner">
+            <span>Kime satacağını bil - İhracat Lead Listeleri</span>
+        </div>
+        
+        <!-- Main navigation -->
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="index.html">TalepGetir</a>
+                    </div>
+
+                    <!-- Desktop Navigation -->
+                    <div class="nav-menu" id="nav-menu">
+                        <div class="dropdown">
+                            <a href="#hizmetlerimiz" class="nav-link dropdown-toggle">
+                                HİZMETLERİMİZ <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="musteri-listesi.html">
+                                    <i class="fas fa-users"></i>
+                                    <span class="service-title">Müşteri Listesi</span>
+                                    <small>Yurtdışından ürününüzü satın alan müşteri listesi</small>
+                                </a>
+                                <a href="soguk-email.html">
+                                    <i class="fas fa-envelope"></i>
+                                    <span class="service-title">Soğuk E-posta Pazarlama</span>
+                                    <small>Gürültüyü aşan e-posta kampanyaları ile görüşme rezervasyonları</small>
+                                </a>
+                                <a href="soguk-arama.html">
+                                    <i class="fas fa-phone"></i>
+                                    <span class="service-title">Soğuk Arama</span>
+                                    <small>Doğrudan telefon iletişimi ile %30 daha fazla randevu</small>
+                                </a>
+                                <a href="randevu-ayarlama.html">
+                                    <i class="fas fa-calendar-check"></i>
+                                    <span class="service-title">Randevu Ayarlama</span>
+                                    <small>Karar vericilerle güvenli toplantılar ve stabil satış hattı</small>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="nasil-calisir.html" class="nav-link">NASIL ÇALIŞIR</a>
+                        <a href="#sonuclar" class="nav-link">SONUÇLAR</a>
+                        <a href="#referanslar" class="nav-link">REFERANSLAR</a>
+                        <a href="fiyatlar.html" class="nav-link">FİYATLAR</a>
+                        <a href="iletisim.html" class="nav-link">İLETİŞİM</a>
+                    </div>
+
+                    <!-- Contact Button -->
+                    <div class="nav-cta">
+                        <a href="iletisim.html" class="btn-primary">İLETİŞİME GEÇ</a>
+                    </div>
+
+                    <!-- Mobile menu button -->
+                    <div class="mobile-menu-btn" id="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <!-- Main Hero -->
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="text-primary">Kime satacağını bil.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    HS kodu ve rakip analiziyle oluşturulmuş, global alıcı firmalardan oluşan hedeflenmiş ihracat lead listeleri sunuyoruz.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary btn-large">NASIL ÇALIŞTIĞINI GÖR</button>
+                    <a href="#sonuclar" class="btn-secondary btn-large">
+                        Sonuçları Gör <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Problems Section -->
+            <div class="problems-section">
+                <h2 class="section-title">Bu durumlardan hangisi size tanıdık geliyor?</h2>
+                
+                <div class="problems-grid" id="problems-grid">
+                    <div class="problem-item" data-id="fuar-problemi">
+                        <div class="problem-content">
+                            <h3>"Fuar dediler, katıldık... ama herkes katalog alıp kaçtı."</h3>
+                            <p>Fuarlara katıldın. On binlerce lira harcadın. Standını kurdun, numuneni götürdün, katalog bastırdın, otelde kaldın...</p>
+                            <p><strong>Sonuç?</strong></p>
+                            <p>Yan stantta kendi ülkesinden biriyle sohbet eden 100 kişi. Gerçek müşteri sayısı 2, sipariş sayısı 0.</p>
+                            <p>Üstelik o 2 kişi de zaten fiyat almaya gelmiş herkes gibi — "biz sizi ararız" diyip kayboldu.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item" data-id="kalite-problemi">
+                        <div class="problem-content">
+                            <h3>"Bizim ürün kaliteli abi, fiyat da uygun ama müşteri yok."</h3>
+                            <p>Kendini bildin bileli üretim yapıyorsun. Ürün taş gibi. Fiyat da rekabetçi. Ama ihracat müşterisi yok.</p>
+                            <p>Çünkü kimse seni bilmiyor.</p>
+                            <p>Çünkü kimse seni aramıyor.</p>
+                            <p>Çünkü kimseye ulaşmıyorsun.</p>
+                            <p>Kaliteyle ihracat olmaz. <strong>Ulaşmadan satış olmaz.</strong></p>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item" data-id="talepler-problemi">
+                        <div class="problem-content">
+                            <h3>"Gelen taleplerin %90'ı ya 'numune' isteyen ya da dolandırıcı."</h3>
+                            <p>Websiteden biri yazıyor. Mail atıyor. LinkedIn'den selam yolluyor.</p>
+                            <p>İlk başta umutlanıyorsun ama konuşma ilerledikçe fark ediyorsun:</p>
+                            <p>Ya komisyoncu, ya çevirmen, ya "ben sizi Afrika'ya sokarım"cı.</p>
+                            <p>Ha bir de numune isteyen ama geri dönmeyen grubu var.</p>
+                            <p>Sonra yine başa dönüyorsun: <strong>Gerçek müşteri yok.</strong></p>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item" data-id="ulasim-problemi">
+                        <div class="problem-content">
+                            <h3>"Kime ulaşacağımı bilmiyorum. Biri bana alıcı versin yeter."</h3>
+                            <p>Sen üreticisin. İşi üretmek.</p>
+                            <p>Ama ihracat yapabilmen için karar vericilere ulaşman gerekiyor.</p>
+                            <p>İthalat yapan firmalar kim? Onların satın alma müdürü kim?</p>
+                            <p>Maili ne, LinkedIn'i ne?</p>
+                            <p>Hangi ülkede, hangi firmaya, hangi sektöre gideceksin bilmiyorsun.</p>
+                            <p>Ve en kötüsü: <strong>Bunu senin yerinize yapacak kimse yok.</strong></p>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item" data-id="zaman-problemi">
+                        <div class="problem-content">
+                            <h3>"Saatlerce görüştük, fiyat yolladık ama adam zaten sadece piyasa araştırıyormuş."</h3>
+                            <p>Sana ulaştı.</p>
+                            <p>Görüştün, fiyat verdin, katalog attın, hatta örnek bile hazırladın.</p>
+                            <p>Ve sonra… Sessizlik.</p>
+                            <p>Haftalarca ses yok.</p>
+                            <p>Meğer adam sadece piyasa öğreniyormuş. Gerçek alıcı değilmiş.</p>
+                            <p>Senin ekibin ise bir "müşteri" için saatlerce çalıştı.</p>
+                            <p><strong>Zaman gitti, motivasyon gitti. Sipariş yok.</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="solutions">
+        <div class="container">
+            <div class="section-header">
+                <h2>Bizimle çalışanların elde edeceği çıktılar:</h2>
+            </div>
+
+            <div class="solutions-grid">
+                <div class="solution-item">
+                    <div class="solution-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>"İlk defa gerçekten alıcı olan insanlarla konuşmaya başlayacaksın."</h3>
+                    <p>Boşa zaman harcamayacaksın.</p>
+                    <p>Katalog isteyen, 'bilgi alayım' diyen, 'ben size dönerim'ciler yok.</p>
+                    <p><strong>Karşındaki kişi ürününün gerçek alıcısı olacak.</strong></p>
+                </div>
+                
+                <div class="solution-item">
+                    <div class="solution-icon">
+                        <i class="fas fa-list-alt"></i>
+                    </div>
+                    <h3>"Elinde sektörüne, ürününe, fiyat aralığına uyan net bir müşteri listesi olacak."</h3>
+                    <p>Rastgele bir liste değil.</p>
+                    <p>Seninle aynı ürünü satan rakip firmalardan daha önce ürün alan firmaları tespit ediyoruz.</p>
+                    <p><strong>Bu listeyi aldığında hangi ürünü satın alacaklarını bileceksin.</strong></p>
+                </div>
+                
+                <div class="solution-item">
+                    <div class="solution-icon">
+                        <i class="fas fa-map"></i>
+                    </div>
+                    <h3>"Satış ekibin için harita gibi bir rehber olacak."</h3>
+                    <p>Artık ekibin kafasını duvara çarpar gibi 'random müşteri arama' yapmayacak.</p>
+                    <p>Kime ulaşacak, ne yazacak, hangi dilde yazacak, hangi sektöre ne fiyat verecek: hepsi belli.</p>
+                    <p>Yani ekip 'arıyorum ama bilmiyorum' değil, <strong>'şu kişiyi arıyorum çünkü X ürününü almış' diyecek.</strong></p>
+                </div>
+                
+                <div class="solution-item">
+                    <div class="solution-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>"Kendi rakiplerinin satış yaptığı firmalara sen de teklif vereceksin."</h3>
+                    <p>O büyük firmalar var ya, sürekli yurtdışına satış yaptığını duyduğun…</p>
+                    <p>İşte onların müşterilerini senin önüne getiriyoruz.</p>
+                    <p><strong>Aynı müşteri, farklı tedarikçi… Kazanma şansın var.</strong></p>
+                </div>
+                
+                <div class="solution-item">
+                    <div class="solution-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>"Zaman kazanacaksın. Moral kazanacaksın. Sipariş alacaksın."</h3>
+                    <p>Aylarca bir müşteriyi 'belki' sipariş vereceği ümidiyle beklemek yok artık.</p>
+                    <p>Arayacağın firmalar net, göndereceğin teklifler anlamlı, yaptığın görüşmeler somut.</p>
+                    <p><strong>Her aksiyonunun bir karşılığı olacak.</strong></p>
+                </div>
+            </div>
+
+            <div class="section-cta">
+                <button class="btn-primary btn-large">HEMEN BAŞLA</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works CTA Section -->
+    <section class="how-it-works-cta-section">
+        <div class="container">
+            <div class="cta-preview">
+                <div class="cta-preview-content">
+                    <h2>TalepGetir Nasıl Çalışır?</h2>
+                    <p>3 adımda hedeflenmiş ihracat lead listesi ile satış sürecinizi hızlandırın</p>
+                    <div class="preview-steps">
+                        <div class="preview-step">
+                            <div class="step-icon">
+                                <i class="fas fa-users-cog"></i>
+                            </div>
+                            <h4>İdeal Müşteri Profili</h4>
+                            <p>Hangi firmalar sizin ürününüzü satın alır?</p>
+                        </div>
+                        <div class="preview-step">
+                            <div class="step-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4>Lead Listesi Oluşturma</h4>
+                            <p>500-2000 nitelikli alıcı firması</p>
+                        </div>
+                        <div class="preview-step">
+                            <div class="step-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h4>Outreach & Toplantılar</h4>
+                            <p>Aylık 10-30 satış toplantısı</p>
+                        </div>
+                    </div>
+                    <div class="preview-cta">
+                        <a href="nasil-calisir.html" class="btn-primary btn-large">DETAYINI KEŞFET</a>
+                        <p class="preview-subtitle">Sürecin tamamını öğrenin</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TalepGetir 4 Step System Section -->
+    <section class="system-overview-home">
+        <div class="container">
+            <div class="system-overview">
+                <h2>TalepGetir 4 Aşamalı Sistem</h2>
+                <p class="system-subtitle">Veri odaklı yaklaşımımızla sistematik satış süreciyle hedeflenmiş ihracat satışları gerçekleştirin</p>
+                
+                <div class="steps-flow">
+                    <div class="step-flow-item">
+                        <div class="step-flow-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="step-flow-content">
+                            <h3>1. ICP Belirleme</h3>
+                            <h4>İdeal Müşteri Profili</h4>
+                            <p>Firmanız için net bir ICP oluşturur, potansiyel alıcıyı tanımlarız</p>
+                        </div>
+                        <div class="step-flow-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="step-flow-item">
+                        <div class="step-flow-icon">
+                            <i class="fas fa-list-alt"></i>
+                        </div>
+                        <div class="step-flow-content">
+                            <h3>2. Potansiyel Müşteri Tespiti</h3>
+                            <h4>Scraping + Yapay Zeka</h4>
+                            <p>Farklı platformlardan veri toplar, AI ile ICP'nize uyan firmaları belirleriz</p>
+                        </div>
+                        <div class="step-flow-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="step-flow-item">
+                        <div class="step-flow-icon">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <div class="step-flow-content">
+                            <h3>3. Karar Verici Bilgileri</h3>
+                            <h4>E‑posta ve Telefon</h4>
+                            <p>Firma sahibi, satın alma yetkilisi, müdür gibi pozisyonların iletişim bilgilerini listeleriz</p>
+                        </div>
+                        <div class="step-flow-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="step-flow-item">
+                        <div class="step-flow-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="step-flow-content">
+                            <h3>4. İletişim ve Toplantılar</h3>
+                            <h4>Outreach & Satış</h4>
+                            <p>Karar vericilerle iletişime geçer, toplantılar planlar ve satış sürecinizi ilerletiriz</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Omnichannel Campaign Highlight -->
+                <div class="omnichannel-highlight">
+                    <div class="omnichannel-content">
+                        <h3>Omnichannel Kampanya Stratejisi</h3>
+                        <p>2. aşamadan itibaren üç farklı kanal üzerinden sistematik iletişim kuruyoruz:</p>
+                        <div class="channel-details">
+                            <div class="channel-detail">
+                                <div class="channel-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="channel-info">
+                                    <h4>E-mail Kampanyaları</h4>
+                                    <p>Kişiselleştirilmiş e-mail serisi ile sürekli temas</p>
+                                </div>
+                            </div>
+                            <div class="channel-detail">
+                                <div class="channel-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="channel-info">
+                                    <h4>Cold Calling</h4>
+                                    <p>Deneyimli satış uzmanlarımızla direkt telefon görüşmeleri</p>
+                                </div>
+                            </div>
+                            <div class="channel-detail">
+                                <div class="channel-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <div class="channel-info">
+                                    <h4>LinkedIn Outreach</h4>
+                                    <p>Profesyonel ağ üzerinden hedefli bağlantı kurma</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="sonuclar" class="results">
+        <div class="container" style="margin-bottom: 40px">
+            <div class="section-header">
+                <h2>Plan, Fiyat ve Garanti</h2>
+                <p>Minimum 6 ay çalışma • Aylık 1.500 € • 6 ay sonunda 30 toplantı hedefi</p>
+            </div>
+            <div class="results-grid">
+                <div class="result-item">
+                    <div class="result-value">6 Ay</div>
+                    <p>Minimum sözleşme süresi</p>
+                </div>
+                <div class="result-item">
+                    <div class="result-value">1.500€</div>
+                    <p>Aylık hizmet bedeli</p>
+                </div>
+                <div class="result-item">
+                    <div class="result-value">30</div>
+                    <p>Hedef toplantı sayısı (toplam)</p>
+                </div>
+                <div class="result-item">
+                    <div class="result-value">%75</div>
+                    <p>Hedef gerçekleşmezse iade</p>
+                </div>
+            </div>
+            <p style="text-align:center; margin-top: 12px; color:#4a5568">Sözleşme noter huzurunda yapılır.</p>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <h2>TalepGetir ile <em>gerçek sonuçlar</em> alın.</h2>
+                <p>
+                    Müşterilerimiz TalepGetir lead listeleri ile ihracat satışlarını büyütüyor.
+                </p>
+            </div>
+
+            <!-- Results Grid -->
+            <div class="results-grid">
+                <div class="result-item">
+                    <div class="result-value">%85</div>
+                    <p>Lead kalitesi doğruluk oranı</p>
+                </div>
+                <div class="result-item">
+                    <div class="result-value">%40</div>
+                    <p>Ortalama yanıt alma oranı</p>
+                </div>
+                <div class="result-item">
+                    <div class="result-value">3X</div>
+                    <p>Satış görüşmesi artışı</p>
+                </div>
+                <div class="result-item">
+                    <div class="result-value">%60</div>
+                    <p>Zaman tasarrufu</p>
+                </div>
+                <div class="result-item">
+                    <div class="result-value">500+</div>
+                    <p>Başarılı ihracat bağlantısı</p>
+                </div>
+            </div>
+
+            <!-- Testimonials Carousel -->
+            <div class="testimonials" id="testimonials">
+                <div class="testimonial-content">
+                    <i class="fas fa-quote-left testimonial-quote"></i>
+                    <blockquote class="testimonial-text" id="testimonial-text">
+                        TalepGetir sayesinde hedef müşterilerimize doğrudan ulaşabiliyoruz. Artık boşa zaman harcamıyoruz ve her lead gerçek bir fırsat.
+                    </blockquote>
+                    <div class="testimonial-author" id="testimonial-author">
+                        <div class="author-name">Mehmet Yılmaz</div>
+                        <div class="author-title">İhracat Müdürü, ABC Tekstil</div>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <div class="testimonial-nav">
+                    <button class="nav-btn" id="prev-testimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="nav-dots" id="nav-dots">
+                        <button class="nav-dot active" data-index="0"></button>
+                        <button class="nav-dot" data-index="1"></button>
+                        <button class="nav-dot" data-index="2"></button>
+                        <button class="nav-dot" data-index="3"></button>
+                    </div>
+                    <button class="nav-btn" id="next-testimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Main Footer -->
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Company Info -->
+                    <div class="footer-column">
+                        <div class="footer-logo">TalepGetir</div>
+                        <p>İhracat lead listeleri ile satışlarınızı büyütün.</p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>Tel: +90 XXX XXX XX XX</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>info@talepgetir.com</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Services Links -->
+                    <div class="footer-column">
+                        <h4>Hizmetlerimiz</h4>
+                        <div class="footer-links">
+                            <a href="ihracat-lead-listeleri.html">İhracat Lead Listeleri</a>
+                            <a href="rakip-analizi.html">Rakip Analizi</a>
+                            <a href="hs-kodu-analizi.html">HS Kodu Analizi</a>
+                            <a href="pazar-arastirmasi.html">Pazar Araştırması</a>
+                            <a href="hedef-musteri-analizi.html">Hedef Müşteri Analizi</a>
+                        </div>
+                    </div>
+
+                    <!-- Additional Links -->
+                    <div class="footer-column">
+                        <h4>Destek</h4>
+                        <div class="footer-links">
+                            <a href="nasil-calisir.html">Nasıl Çalışır</a>
+                            <a href="sss.html">SSS</a>
+                            <a href="iletisim.html">İletişim</a>
+                            <a href="blog.html">Blog</a>
+                            <a href="gizlilik-politikasi.html">Gizlilik Politikası</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Section -->
+                <div class="footer-bottom">
+                    <div class="footer-description">
+                        <h4>TalepGetir - İhracat Lead Platformu</h4>
+                        <p>
+                            Kime satacağını bil. TalepGetir ile hedeflenmiş ihracat lead listeleri edinin ve satışlarınızı büyütün.
+                        </p>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+                
+                <div class="footer-cta">
+                    <a href="iletisim.html" class="btn-primary">İLETİŞİME GEÇ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
