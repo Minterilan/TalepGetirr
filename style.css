@@ -1802,6 +1802,73 @@ body {
     margin-bottom: 1.5rem;
 }
 
+/* ICP Section Layout */
+.icp-section-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.icp-text-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.icp-text-content h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.icp-text-content p {
+    color: #4b5563;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.image-placeholder {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Remove previous placeholder styles if they interfere */
+    background: none; /* Override if there's a default */
+    border: none; /* Override if there's a default */
+    padding: 0; /* Override if there's a default */
+}
+
+.image-placeholder img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.75rem; /* Optional: adds a subtle rounded corner */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+}
+
+@media (max-width: 768px) {
+    .icp-section-layout {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .icp-text-content,
+    .image-placeholder {
+        min-width: unset;
+        width: 100%;
+    }
+
+    .icp-text-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .icp-text-content p {
+        font-size: 0.95rem;
+    }
+}
+
 .process-steps {
     display: grid;
     gap: 1.5rem;
