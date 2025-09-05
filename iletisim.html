@@ -16,11 +16,10 @@
                 <div class="nav-content">
                     <div class="logo"><a href="index.html">TalepGetir</a></div>
                     <div class="nav-menu" id="nav-menu">
-                        <a href="index.html" class="nav-link">ANA SAYFA</a>
-                        <a href="index.html#hizmetlerimiz" class="nav-link">HİZMETLERİMİZ</a>
+                        <a href="musteri-listesi.html" class="nav-link">
+                            HİZMETLERİMİZ
+                        </a>
                         <a href="nasil-calisir.html" class="nav-link">NASIL ÇALIŞIR</a>
-                        <a href="index.html#sonuclar" class="nav-link">SONUÇLAR</a>
-                        <a href="fiyatlar.html" class="nav-link">FİYATLAR</a>
                         <a href="iletisim.html" class="nav-link active">İLETİŞİM</a>
                     </div>
                     <div class="nav-cta"><a href="iletisim.html" class="btn-primary">İLETİŞİME GEÇ</a></div>
@@ -55,33 +54,34 @@
                 <div class="content-main">
                     <h2>İletişim Formu</h2>
                     <p>Bilgilerinizi bırakın, uzmanlarımız sizinle iletişime geçsin.</p>
-                    <form id="contact-form" class="cta-box" onsubmit="event.preventDefault(); window.location.href='mailto:info@talepgetir.com';">
+                    <form id="contactForm" class="cta-box">
                         <div style="display:grid; gap:1rem; grid-template-columns:1fr 1fr;">
                             <div>
-                                <label>Ad Soyad</label>
-                                <input type="text" required style="width:100%; padding:0.75rem; border:1px solid #e5e7eb; border-radius:0.5rem;">
+                                <label for="user_name">Ad Soyad</label>
+                                <input type="text" id="user_name" name="user_name" required style="width:100%; padding:0.75rem; border:1px solid #e5e7eb; border-radius:0.5rem;">
                             </div>
                             <div>
-                                <label>E‑posta</label>
-                                <input type="email" required style="width:100%; padding:0.75rem; border:1px solid #e5e7eb; border-radius:0.5rem;">
+                                <label for="user_email">E‑posta</label>
+                                <input type="email" id="user_email" name="user_email" required style="width:100%; padding:0.75rem; border:1px solid #e5e7eb; border-radius:0.5rem;">
                             </div>
                             <div>
-                                <label>Telefon</label>
-                                <input type="tel" style="width:100%; padding:0.75rem; border:1px solid #e5e7eb; border-radius:0.5rem;">
+                                <label for="user_phone">Telefon</label>
+                                <input type="tel" id="user_phone" name="user_phone" style="width:100%; padding:0.75rem; border:1px solid #e5e7eb; border-radius:0.5rem;">
                             </div>
                             <div>
-                                <label>Firma</label>
-                                <input type="text" style="width:100%; padding:0.75rem; border:1px solid #e5e7eb; border-radius:0.5rem;">
+                                <label for="company_name">Firma</label>
+                                <input type="text" id="company_name" name="company_name" style="width:100%; padding:0.75rem; border:1px solid #e5e7eb; border-radius:0.5rem;">
                             </div>
                             <div style="grid-column:1/-1;">
-                                <label>Mesajınız</label>
-                                <textarea rows="5" required style="width:100%; padding:0.75rem; border:1px solid #e5e7eb; border-radius:0.5rem;"></textarea>
+                                <label for="message">Mesajınız</label>
+                                <textarea id="message" name="message" rows="5" required style="width:100%; padding:0.75rem; border:1px solid #e5e7eb; border-radius:0.5rem;"></textarea>
                             </div>
                         </div>
                         <div style="margin-top:1rem; display:flex; gap:0.75rem;">
-                            <button class="btn-primary">GÖNDER</button>
+                            <button class="btn-primary ripple" type="submit">GÖNDER</button>
                             <a class="btn-secondary" href="mailto:info@talepgetir.com">info@talepgetir.com</a>
                         </div>
+                        <div id="formResult" style="margin-top:1rem; font-weight:600;"></div>
                     </form>
                 </div>
                 <aside class="content-sidebar">
@@ -149,5 +149,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </body>
 </html>

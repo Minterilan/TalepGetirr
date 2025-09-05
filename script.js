@@ -225,3 +225,47 @@ document.querySelectorAll('.problem-item, .solution-item, .step-item, .result-it
 });
 
 console.log('🚀 TalepGetir JavaScript loaded successfully!');
+
+// EmailJS Integration
+(function() {
+    emailjs.init("service_y1zmeco"); // Replace with your Public Key
+})();
+
+const contactForm = document.getElementById('contactForm');
+const formResult = document.getElementById('formResult');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        formResult.textContent = 'Gönderiliyor...';
+        formResult.style.color = '#3498db';
+
+        emailjs.sendForm('service_5epe9ck', 'template_uq3pytg', this)
+            .then(() => {
+                formResult.textContent = 'Mesajınız başarıyla gönderildi!';
+                formResult.style.color = '#27ae60';
+                contactForm.reset();
+            }, (error) => {
+                formResult.textContent = 'Mesaj gönderilemedi. Lütfen daha sonra tekrar deneyin. Hata: ' + error.text;
+                formResult.style.color = '#e74c3c';
+            });
+    });
+}
+
+// Ripple effect for buttons
+document.querySelectorAll('.ripple').forEach(button => {
+    button.addEventListener('click', function (e) {
+        let x = e.clientX - e.target.offsetLeft;
+        let y = e.clientY - e.target.offsetTop;
+
+        let ripple = document.createElement('span');
+        ripple.style.left = x + 'px';
+        ripple.style.top = y + 'px';
+        this.appendChild(ripple);
+
+        setTimeout(() => {
+            ripple.remove();
+        }, 600); // Duration of the ripple effect
+    });
+});
