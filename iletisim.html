@@ -54,7 +54,7 @@
                 <div class="content-main">
                     <h2>İletişim Formu</h2>
                     <p>Bilgilerinizi bırakın, uzmanlarımız sizinle iletişime geçsin.</p>
-                    <form id="contact-form" class="cta-box" onsubmit="event.preventDefault(); window.location.href='mailto:info@talepgetir.com';">
+                    <form id="contactForm" class="cta-box">
                         <div style="display:grid; gap:1rem; grid-template-columns:1fr 1fr;">
                             <div>
                                 <label>Ad Soyad</label>
@@ -78,11 +78,8 @@
                             </div>
                         </div>
                         <div style="margin-top:1rem; display:flex; gap:0.75rem;">
-                            <button class="btn-primary">GÖNDER</button>
-                            // ... existing code ...
-                            81|                            <button class="btn-primary ripple" type="submit">GÖNDER</button>
-                            82|                            <a class="btn-secondary">info@talepgetir.com</a>
-                            // ... existing code ...
+                            <button class="btn-primary ripple" type="submit">GÖNDER</button>
+                            <a class="btn-secondary">info@talepgetir.com</a>
                         </div>
                     </form>
                 </div>
