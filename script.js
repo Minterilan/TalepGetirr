@@ -241,7 +241,7 @@ if (contactForm) {
         formResult.textContent = 'Gönderiliyor...';
         formResult.style.color = '#3498db';
 
-        emailjs.sendForm('service_5epe9ck', 'template_uq3pytg', this)
+        emailjs.sendForm('service_y1zmeco', 'template_uq3pytg', this)
             .then(() => {
                 formResult.textContent = 'Mesajınız başarıyla gönderildi!';
                 formResult.style.color = '#27ae60';
