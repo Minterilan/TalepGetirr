@@ -228,7 +228,7 @@ console.log('🚀 TalepGetir JavaScript loaded successfully!');
 
 // EmailJS Integration
 (function() {
-    emailjs.init("service_y1zmeco"); // Replace with your Public Key
+    emailjs.init("YOUR_PUBLIC_KEY"); // EmailJS hesabınızdan public key'i buraya ekleyin
 })();
 
 const contactForm = document.getElementById('contactForm');
@@ -241,7 +241,7 @@ if (contactForm) {
         formResult.textContent = 'Gönderiliyor...';
         formResult.style.color = '#3498db';
 
-        emailjs.sendForm('service_y1zmeco', 'template_uq3pytg', this)
+        emailjs.sendForm('service_u7imlie', 'YOUR_TEMPLATE_ID', this)
             .then(() => {
                 formResult.textContent = 'Mesajınız başarıyla gönderildi!';
                 formResult.style.color = '#27ae60';

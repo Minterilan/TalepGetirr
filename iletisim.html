@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -58,29 +59,30 @@
                         <div style="display:grid; gap:1rem; grid-template-columns:1fr 1fr;">
                             <div>
                                 <label>Ad Soyad</label>
-                                <input type="text" required style="width:100%; padding:0.75rem; border:1px solid #e5e7eb; border-radius:0.5rem;">
+                                <input type="text" name="from_name" required style="width:100%; padding:0.75rem; border:1px solid #e5e7eb; border-radius:0.5rem;">
                             </div>
                             <div>
                                 <label>E‑posta</label>
-                                <input type="email" required style="width:100%; padding:0.75rem; border:1px solid #e5e7eb; border-radius:0.5rem;">
+                                <input type="email" name="from_email" required style="width:100%; padding:0.75rem; border:1px solid #e5e7eb; border-radius:0.5rem;">
                             </div>
                             <div>
                                 <label>Telefon</label>
-                                <input type="tel" style="width:100%; padding:0.75rem; border:1px solid #e5e7eb; border-radius:0.5rem;">
+                                <input type="tel" name="phone" style="width:100%; padding:0.75rem; border:1px solid #e5e7eb; border-radius:0.5rem;">
                             </div>
                             <div>
                                 <label>Firma</label>
-                                <input type="text" style="width:100%; padding:0.75rem; border:1px solid #e5e7eb; border-radius:0.5rem;">
+                                <input type="text" name="company" style="width:100%; padding:0.75rem; border:1px solid #e5e7eb; border-radius:0.5rem;">
                             </div>
                             <div style="grid-column:1/-1;">
                                 <label>Mesajınız</label>
-                                <textarea rows="5" required style="width:100%; padding:0.75rem; border:1px solid #e5e7eb; border-radius:0.5rem;"></textarea>
+                                <textarea rows="5" name="message" required style="width:100%; padding:0.75rem; border:1px solid #e5e7eb; border-radius:0.5rem;"></textarea>
                             </div>
                         </div>
                         <div style="margin-top:1rem; display:flex; gap:0.75rem;">
                             <button class="btn-primary ripple" type="submit">GÖNDER</button>
                             <a class="btn-secondary">info@talepgetir.com</a>
                         </div>
+                        <div id="formResult" style="margin-top:1rem; font-weight:bold;"></div>
                     </form>
                 </div>
                 <aside class="content-sidebar">
